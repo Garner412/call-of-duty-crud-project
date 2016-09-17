@@ -2,7 +2,7 @@ html {
   background-color: lightgrey;
 }
 
-.signinpage, .signuppage {
+.signinpage, .signuppage, .signup-success {
   margin: 50px auto;
   padding: 0px 30px 100px 30px;
   width: 700px;
@@ -17,10 +17,16 @@ html {
   text-decoration: underline;
 }
 
-/*#signinbox {
+/*#signupbox {
   text-align: center;
+}*/
+
+.user-profile {
+  margin: 50px auto;
+  padding: 0px 30px 100px 30px;
+  width: 1500px;
+  border: 3px solid black;
 }
-*/
 a {
   text-decoration: none;
   color: blue;

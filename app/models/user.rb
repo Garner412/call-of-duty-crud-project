@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   has_many :loadouts
   has_many :game_modes
 
-  validates :username, :email, :password, presence: true
+  validates :username, :email, :encrypted_password, presence: true
 
   def password
     @password ||= BCrypt::Password.new(encrypted_password)
@@ -16,8 +16,8 @@ class User < ActiveRecord::Base
     self.encrypted_password = @password
   end
 
-  def authenticate(password)
-    self.password == password
+  def authenticate(text_password)
+    self.password == text_password
   end
 
 end
