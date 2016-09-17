@@ -1,0 +1,30 @@
+html {
+  background-color: lightgrey;
+}
+
+.signinpage {
+  margin: 20px auto;
+  padding: 0px 20px 20px 20px;
+  width: 25%;
+  border: 1px solid black;
+}
+
+#welcome-header {
+  text-align: center;
+  font-family: impact;
+  font-size: 100px;
+  text-decoration: underline;
+}
+
+.signinbox {
+  /*border: 1px solid black;*/
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+th {
+  text-align: left;
+}
