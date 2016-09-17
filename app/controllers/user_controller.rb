@@ -1,6 +1,9 @@
+get '/users/new' do
+  erb :'/users/new'
+end
 
-get '/users/login' do
-  erb :'users/login'
+get '/users/:id' do
+  erb :'users/show'
 end
 
 post '/users/login' do
@@ -9,10 +12,12 @@ post '/users/login' do
     session[:user_id] = user.id
     redirect 'users/show'
   else
-    erb :index
+    redirect '/'
   end
 end
 
-get '/user' do
+
+get '/user/:id' do
+  player = User.find(params[:id])
   erb :'users/show'
 end

@@ -2,11 +2,12 @@ html {
   background-color: lightgrey;
 }
 
-.signinpage {
-  margin: 20px auto;
-  padding: 0px 20px 20px 20px;
-  width: 25%;
-  border: 1px solid black;
+.signinpage, .signuppage {
+  margin: 50px auto;
+  padding: 0px 30px 100px 30px;
+  width: 700px;
+  border: 3px solid black;
+  text-align: center;
 }
 
 #welcome-header {
@@ -16,10 +17,10 @@ html {
   text-decoration: underline;
 }
 
-.signinbox {
-  /*border: 1px solid black;*/
+/*#signinbox {
+  text-align: center;
 }
-
+*/
 a {
   text-decoration: none;
   color: blue;
