@@ -38,3 +38,17 @@ post '/users/login' do
   end
 end
 
+put '/users/:id' do
+  player = User.find(params[:id])
+  player.update_attributes(first_name: params[:first_name], last_name: params[:last_name], username: params[:username], email: params[:email], password: current_user.password)
+  redirect "/users/#{player.id}"
+end
+
+
+
+
+
+
+
+
+
